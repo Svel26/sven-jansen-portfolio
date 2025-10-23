@@ -5,6 +5,17 @@
   --secondary-light-blue: #87CEEB;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -262,6 +273,7 @@ section {
 
 .education {
     margin-top: 3rem;
+    animation: fadeIn 1s ease-out;
 }
 
 .education h3 {
@@ -278,6 +290,17 @@ section {
 .education li {
     margin-bottom: 0.8rem;
     line-height: 1.6;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.education li:hover {
+    background-color: var(--secondary-light-blue);
+}
+
+.education li i {
+    color: var(--primary-blue);
+    margin-right: 0.5rem;
 }
 
 /* Contact */
@@ -296,8 +319,8 @@ section {
 }
 
 .contact-item i {
-    background-color: var(--secondary-light-blue);
-    color: #333;
+    background-color: var(--primary-blue);
+    color: white;
     font-size: 1.5rem;
     padding: 0.5rem;
     border-radius: 50%;
@@ -427,5 +450,9 @@ footer {
 
     .hero {
         padding: 6rem 0;
+    }
+
+    .education li i {
+        font-size: 0.9rem;
     }
 }
