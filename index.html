@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sven Jansen - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Sven Jansen</h1>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="avatar">
+                        <img src="./images/profile.jpg" alt="Sven Jansen">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Hi, I'm Sven. An MBO Software Developer student | Python, Data, and LLM Enthusiast.</h1>
+                        <p>I'm Sven Jansen, a passionate Python developer specializing in data science and large language models. I love building solutions that turn raw data into actionable insights and exploring how AI can enhance human creativity. Currently, I'm working on projects involving predictive analytics and conversational AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="./images/project.png" alt="Screenshot">
+                        <h3>Data Visualization Tool</h3>
+                        <p>A web app for visualizing complex datasets using interactive charts.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>D3.js</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/svenjansen/data-viz" target="_blank">View Code</a>
+                            <a href="https://data-viz-demo.herokuapp.com" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./images/project.png" alt="Screenshot">
+                        <h3>LLM Chatbot</h3>
+                        <p>An AI-powered chatbot for answering questions about data science.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/svenjansen/llm-chatbot" target="_blank">View Code</a>
+                            <a href="https://llm-chatbot.streamlit.app" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./images/project.png" alt="Screenshot">
+                        <h3>Predictive Analytics Model</h3>
+                        <p>Machine learning model to predict customer churn using historical data.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>TensorFlow</span>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/svenjansen/churn-prediction" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Warehouse Worker - KLG Europe</h3>
+                        <p class="date">2025</p>
+                        <p>Managing warehouse operations and logistics, demonstrating organizational and teamwork skills.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Intern Software Developer - Premier Tech</h3>
+                        <p class="date">2024 - 2025</p>
+                        <ul>
+                            <li>Worked on projects with embedded PLCs, integrating software with physical systems</li>
+                            <li>Developed Python scripts using Pandas and NumPy to automate data extraction from sensors, reducing manual processing time by 30%</li>
+                            <li>Gained experience in connecting software to physical systems and troubleshooting hardware-software interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <h3>Cleaner - SENS (Maxima Medisch Centrum)</h3>
+                        <p class="date">2024</p>
+                        <p>Vacation job maintaining cleanliness in medical facility, emphasizing attention to detail and responsibility.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Metalworking & ICT - Lemmens</h3>
+                        <p class="date">2023</p>
+                        <p>Vacation job combining metalworking and IT tasks, gaining hands-on experience in diverse technical fields.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Allround Employee - Gamma Bouwmarkten</h3>
+                        <p class="date">2021 - 2023</p>
+                        <p>General retail and customer service role, developing communication and problem-solving skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Programming: Python</span>
+                            <span class="skill-tag">AI/ML: Interest in Machine Learning, experience with LLMs</span>
+                            <span class="skill-tag">Systems: Introduction to embedded PLCs</span>
+                            <span class="skill-tag">Data Processing: Basic software development principles</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Pandas, NumPy for data manipulation</span>
+                            <span class="skill-tag">Git for version control</span>
+                            <span class="skill-tag">Basic knowledge of databases</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Team Player: Social and collaborative</span>
+                            <span class="skill-tag">Problem Solving: Creative technical solutions</span>
+                            <span class="skill-tag">Communication: Dutch (Fluent), English (Good)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>MBO Level 4 Software Development - SintLucas, Eindhoven (2022 - Present)</li>
+                        <li>VMBO-TL - Rythovius College, Eersel (2018 - 2022)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+31613499882">06 13 49 98 82</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:sjjansen06@gmail.com">sjjansen06@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/sven-jansen" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/svenjansen" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sven Jansen. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
