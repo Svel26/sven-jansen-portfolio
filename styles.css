@@ -161,7 +161,7 @@ section {
 .date {
     color: #8e9297;
     font-style: italic;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 0.9rem;
 }
@@ -176,6 +176,35 @@ section {
     padding-left: 2rem;
     position: relative;
     line-height: 1.6;
+}
+
+/* Collapsible experience cards */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.toggle-arrow {
+    font-size: 1.2rem;
+    color: #2563eb;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.project-card.expanded .card-details {
+    max-height: 500px;
+}
+
+.project-card.expanded .toggle-arrow {
+    transform: rotate(180deg);
 }
 
 .project-card li::before {

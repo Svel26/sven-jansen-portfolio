@@ -36,3 +36,10 @@ document.addEventListener('click', (e) => {
         hamburger.classList.remove('active');
     }
 });
+
+// Experience card toggle
+document.querySelectorAll('.card-header').forEach(header => {
+    header.addEventListener('click', () => {
+        header.closest('.project-card').classList.toggle('expanded');
+    });
+});
