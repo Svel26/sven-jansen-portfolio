@@ -1,5 +1,9 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root {
+  --primary-blue: #0056B3;
+  --secondary-light-blue: #87CEEB;
+}
 
 /* Reset and base styles */
 * {
@@ -43,7 +47,7 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2563eb;
+    color: var(--primary-blue);
 }
 
 .nav-menu {
@@ -63,7 +67,7 @@ header {
 }
 
 .nav-menu a:hover {
-    color: #2563eb;
+    color: var(--secondary-light-blue);
     transform: translateY(-2px);
 }
 
@@ -115,13 +119,13 @@ section {
 
 .avatar i {
     font-size: 4rem;
-    color: #2563eb;
+    color: var(--primary-blue);
 }
 
 .hero-text h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2563eb;
+    color: var(--primary-blue);
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
@@ -152,7 +156,7 @@ section {
 }
 
 .project-card h3 {
-    color: #2563eb;
+    color: var(--primary-blue);
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
@@ -188,7 +192,7 @@ section {
 
 .toggle-arrow {
     font-size: 1.2rem;
-    color: #2563eb;
+    color: var(--primary-blue);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -209,7 +213,7 @@ section {
 
 .project-card li::before {
     content: "•";
-    color: #2563eb;
+    color: var(--primary-blue);
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -230,7 +234,7 @@ section {
 }
 
 .skill-category h3 {
-    color: #2563eb;
+    color: var(--primary-blue);
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
 }
@@ -242,12 +246,18 @@ section {
 }
 
 .skill-tag {
-    background-color: #2563eb;
+    background-color: var(--primary-blue);
     color: white;
     border-radius: 20px;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
     display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: var(--secondary-light-blue);
+    color: white;
 }
 
 .education {
@@ -255,7 +265,7 @@ section {
 }
 
 .education h3 {
-    color: #2563eb;
+    color: var(--primary-blue);
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
 }
@@ -286,8 +296,11 @@ section {
 }
 
 .contact-item i {
-    color: #2563eb;
+    background-color: var(--secondary-light-blue);
+    color: #333;
     font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
 .contact-item a {
@@ -298,7 +311,7 @@ section {
 }
 
 .contact-item a:hover {
-    color: #2563eb;
+    color: var(--secondary-light-blue);
 }
 
 /* Footer */
@@ -333,7 +346,7 @@ footer {
 
 .tech-tags span {
     background-color: #e0e7ff;
-    color: #2563eb;
+    color: var(--primary-blue);
     border-radius: 20px;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
@@ -348,14 +361,18 @@ footer {
 }
 
 .project-links a {
-    color: #2563eb;
+    background-color: var(--primary-blue);
+    color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 .project-links a:hover {
-    color: #1d4ed8;
+    background-color: var(--secondary-light-blue);
+    color: white;
 }
 
 /* Responsive Design */
